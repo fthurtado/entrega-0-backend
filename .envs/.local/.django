@@ -1,0 +1,16 @@
+# General
+# ------------------------------------------------------------------------------
+USE_DOCKER=yes
+IPYTHONDIR=/app/.ipython
+JWT_KEY=entrega_0
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+# ------------------------------------------------------------------------------
+CELERY_BROKER_URL=redis://redis:6379/0
+
+# Flower
+CELERY_FLOWER_USER=guuYaNwNLwcMGACSPJiHHeloYlTXQdPk
+CELERY_FLOWER_PASSWORD=ub1L83x93SlhO3AcpKNjjPlFelp3suOOqkfhCy0PNvjMvL4Yh69zd2QRDCHIyTSt
