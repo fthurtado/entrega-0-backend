@@ -10,7 +10,7 @@ urlpatterns = []
 
 urlpatterns += (
     [
-        path("", TemplateView.as_view(template_name="frontend/index.html"), name="home"),
+        path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
         path(
             "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
         ),
