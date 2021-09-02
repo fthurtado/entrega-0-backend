@@ -31,7 +31,7 @@ certificatesResolvers:
 http:
   routers:
     web-secure-router:
-      rule: "Host(`entrega-0-backend.com`) || Host(`www.entrega-0-backend.com`)"
+      rule: "Host(`api.entrega-0-fthurtado.ml`)"
       entryPoints:
         - web-secure
       middlewares:
@@ -42,7 +42,7 @@ http:
         certResolver: letsencrypt
 
     flower-secure-router:
-      rule: "Host(`entrega-0-backend.com`)"
+      rule: "Host(`entrega-0-fthurtado.ml`)"
       entryPoints:
         - flower
       service: flower

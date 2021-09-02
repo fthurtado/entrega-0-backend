@@ -13,7 +13,7 @@ def update_site_forward(apps, schema_editor):
     Site.objects.update_or_create(
         id=settings.SITE_ID,
         defaults={
-            "domain": "entrega-0-backend.com",
+            "domain": "entrega-0-fthurtado.ml",
             "name": "Backend",
         },
     )
