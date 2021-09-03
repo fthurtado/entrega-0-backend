@@ -47,16 +47,6 @@ services:
   redis:
     image: redis:6
 
-  celeryworker:
-    <<: *django
-    image: backend_production_celeryworker
-    command: /start-celeryworker
-
-  celerybeat:
-    <<: *django
-    image: backend_production_celerybeat
-    command: /start-celerybeat
-
   flower:
     <<: *django
     image: backend_production_flower
