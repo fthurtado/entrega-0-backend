@@ -41,15 +41,6 @@ http:
         # https://docs.traefik.io/master/routing/routers/#certresolver
         certResolver: letsencrypt
 
-    flower-secure-router:
-      rule: "Host(`fthurtado-entrega-0.tk`)"
-      entryPoints:
-        - flower
-      service: flower
-      tls:
-        # https://docs.traefik.io/master/routing/routers/#certresolver
-        certResolver: letsencrypt
-
   middlewares:
     csrf:
       # https://docs.traefik.io/master/middlewares/headers/#hostsproxyheaders
