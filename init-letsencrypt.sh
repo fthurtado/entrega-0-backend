@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(api.fthurtado-entrega-0.tk www.api.fthurtado-entrega-0.tk)
+domains=(api.fthurtado-entrega-0.tk)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="fthurtado@uc.cl" # Adding a valid address is strongly recommended
